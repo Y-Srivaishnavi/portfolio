@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="../static/styles.css">
-    <script src="./script.js"></script>
+    <script src="./static/script.js"></script>
 </head>
 <body>
+    
     <div class="container">
         <h1 id="heading"> Welcome to my portfolio! </h1>
         <h3> Hello&#128075, I'm Srivaishnavi! </h3>
@@ -19,7 +20,14 @@
             <a href="http://linkedin.com/in/srivaishnavi-yaddanapudi/" target="blank"><img height="32" width="32" src="https://unpkg.com/simple-icons@v13/icons/linkedin.svg" title="LinkedIn"/> </a>
             <a href="https://github.com/Y-Srivaishnavi" target="_blank"> <img height="32" width="32" src="https://unpkg.com/simple-icons@v13/icons/github.svg"> </a>
         </div>
-        <button id="toggleDarkMode"><img height="20" width="20" src=".\default.svg" title="Dark mode"/></button>
+
+        <div class="resume">
+        <button><a href="../static/my_resume.pdf" target="_blank"> View my CV!</a></button>
+        </div>
+        <div class="lvd">
+            <button id="toggleDarkMode"><img height="20" width="20" src="{{ url_for('static', filename='moon.svg') }}" title="Dark mode" /></button>
+        </div>
+        
     </div>
 </body>
 </html>
