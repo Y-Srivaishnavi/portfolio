@@ -7,4 +7,4 @@
 ![Preview](preview_dark.png)
 
 ## Project Demo
-[https://www.youtube.com/watch?v=W0PPZPb4x0A](YouTube)
+[YouTube](https://www.youtube.com/watch?v=W0PPZPb4x0A)
