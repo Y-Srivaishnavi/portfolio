@@ -7,4 +7,4 @@
 ![Preview](preview_dark.png)
 
 ## Project Demo
-[YouTube](https://www.youtube.com/watch?v=W0PPZPb4x0A)
+[YouTube](https://www.youtube.com/watch?v=R6AViY14Nsg) - I *can* open my resume but chose not to for privacy reasons. 
