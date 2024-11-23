@@ -1,23 +1,33 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: green;
-    margin: 0;
+    background-color: #fefefe;
+    margin-left: 200px;
     padding: 0;
-    justify-content: center;
+    justify-content:left;
     align-items: center;
     height: 100vh;
     display:flex;
 }
 
 .container {
-    background: white;
+    background: #fefefe;
     padding: 20px;
     border-radius: 10px;
     color: green;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    text-align:left;
     display: inline;
 }
+
+#typed-text {
+    font-size: 1.75rem;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    display: inline-block;
+}
+
 
 .lvd {
     display: inline-flex;
@@ -41,7 +51,8 @@ body {
 }
 
 .resume {
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-decoration:none;
 }
 
@@ -50,11 +61,17 @@ body {
 }
 
 .dark-mode .container {
-    background: plum;
+    background: #121212;
     padding: 20px;
     border-radius: 10px;
-    color: #121212;
+    color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left;
     display: inline;
+}
+
+.dark-mode .links {
+    background-color: gold;
+    display: inline-block;
+    padding-top: 4px;
 }
