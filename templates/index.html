@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="../static/styles.css">
-    <script src="./static/script.js"></script>
-    <script src="./static/animations.js"></script>
+    <script src="../static/scripts/dark_mode.js"></script>
+    <script src="../static/scripts/animations.js"></script>
 </head>
 <body>
     
     <div class="container">
+        
+
         <div class="heading">
-            <h1> Hello&#128075 </h1>
+            <h1> Hello<span class="rotate">&#128075</span></h1>
             <div id="typed-text"></div>
         </div>
         <!-- <p>Python&#128013 &#128205 ML&#128640 &#128205 Research&#128270</p> -->
@@ -28,7 +30,7 @@
         <button><a href="../static/my_resume.pdf" target="_blank"> View my CV!</a></button>
         </div>
         <div class="lvd">
-            <button id="toggleDarkMode"><img height="20" width="20" src="{{ url_for('static', filename='moon.svg') }}" title="Dark mode" /></button>
+            <button id="toggleDarkMode"><img height="20" width="20" src="{{ url_for('static', filename='logos/moon.svg') }}" title="Dark mode" /></button>
         </div>
         
     </div>
