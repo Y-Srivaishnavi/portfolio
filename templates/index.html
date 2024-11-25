@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/styles/text_styles.css">
+    <link rel="stylesheet" href="../static/styles/logo_styles.css">
     <script src="../static/scripts/dark_mode.js"></script>
     <script src="../static/scripts/animations.js"></script>
+    <!-- <script src="../static/scripts/skillset.js"></script> -->
 </head>
 <body>
     
-    <div class="container">
-        
-
+    <div class="text_container">
         <div class="heading">
             <h1> Hello<span class="rotate">&#128075</span></h1>
             <div id="typed-text"></div>
@@ -31,8 +31,15 @@
         </div>
         <div class="lvd">
             <button id="toggleDarkMode"><img height="20" width="20" src="{{ url_for('static', filename='logos/moon.svg') }}" title="Dark mode" /></button>
-        </div>
-        
+        </div>        
+    </div>
+    
+    <div class="logo_container">
+        <img id="python_logo" src="{{ url_for('static', filename='logos/python.png') }}" title="Python"/>
+        <img id="tf_logo" src="{{ url_for('static', filename='logos/tensf.png') }}" title="TensorFlow"/>
+        <img id="pd_logo" src="{{ url_for('static', filename='logos/pandas.png') }}" title="Pandas"/>
+        <img id="java_logo" src="{{ url_for('static', filename='logos/java.png') }}" title="Java"/>
+        <img id="c_logo" src="{{ url_for('static', filename='logos/c_prog.png') }}" title="CLang"/>
     </div>
 </body>
 </html>
