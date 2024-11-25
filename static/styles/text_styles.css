@@ -9,7 +9,7 @@ body {
     display:flex;
 }
 
-.container {
+.text_container {
     background: #fefefe;
     padding: 20px;
     border-radius: 10px;
@@ -17,6 +17,23 @@ body {
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     text-align:left;
     display: inline;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); /* Start at 0 degrees */
+    }
+    50% {
+        transform: rotate(20deg); /* Rotate to 30 degrees */
+    }
+    100% {
+        transform: rotate(0deg); /* Return to 0 degrees */
+    }
+}
+
+.rotate {
+    display: inline-block; /* Necessary for rotation */
+    animation: rotate 2s linear infinite; /* 2-second continuous rotation */
 }
 
 #typed-text {
@@ -56,11 +73,12 @@ body {
     text-decoration:none;
 }
 
+
 .dark-mode {
     background-color: #121212;
 }
 
-.dark-mode .container {
+.dark-mode .text_container {
     background: #121212;
     padding: 20px;
     border-radius: 10px;
